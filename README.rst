@@ -92,6 +92,11 @@ An example of making use of these options:
 UMAP also supports fitting to sparse matrix data. This is currently
 experimental and may be slower than the eventual final implementation.
 
+If you'd like to monitor the progress on long-running datasets, you can enable logging like so:
+
+.. code:: python
+    embedding = umap.UMAP(verbose=True).fit_transform(digits.data)
+
 Further details and tutorials are coming.
 
 ----------------
